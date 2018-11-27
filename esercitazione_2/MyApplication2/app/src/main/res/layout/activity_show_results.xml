@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ShowResults">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,24 +17,9 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ERRORE"
-                android:id="@+id/errore"
-                android:gravity="center"
-                android:textSize="30dp"
-                android:background="@color/rossoChiaro"
-                android:textColor="@color/rossoScuro"
-                />
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16dp" />
-
+            <!-- Messaggio Errore
+            GRUPPO B - lo vedremo la prossima lezione
+            -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -54,11 +39,10 @@
                 android:layout_height="wrap_content"
                 android:text="Nome:"
                 android:textSize="36dp" />
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/nome"
-                android:hint="es: Paolo"/>
+                android:id="@+id/attrNomeRes"/>
 
             <!-- Cognome -->
             <Space
@@ -69,11 +53,10 @@
                 android:layout_height="wrap_content"
                 android:text="Cognome:"
                 android:textSize="36dp" />
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/cognome"
-                android:hint="es: Bianchi"/>
+                android:id="@+id/attrCognomeRes"/>
 
             <!-- Data di nascita -->
             <Space
@@ -84,11 +67,10 @@
                 android:layout_height="wrap_content"
                 android:text="Data di Nascita:"
                 android:textSize="36dp" />
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/data"
-                android:hint="es: 01/01/1990"/>
+                android:id="@+id/attrDataRes"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -97,9 +79,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/inserisci"
-                android:text="Inserisci"
+                android:id="@+id/ok"
+                android:text="Ok"
                 />
         </LinearLayout>
     </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
