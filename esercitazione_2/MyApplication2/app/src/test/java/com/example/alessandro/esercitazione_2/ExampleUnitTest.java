@@ -1,4 +1,4 @@
-package com.example.studente.myapplication;
+package com.example.alessandro.esercitazione_2;
 
 import org.junit.Test;
 
